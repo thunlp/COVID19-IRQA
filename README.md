@@ -8,12 +8,6 @@ The CORD-19 resource is constructed by Semantic Scholar of Allen Institute and w
 
 ## IR and QA Pipeline
 
-### Build Index
-Elastic search local server is needed.
-```
-./appassembler/bin/IndexCollection -collection JsonCollection -es -es.index {index} -input {collection} -generator LuceneDocumentGenerator -threads 9 -storePositions -storeDocvectors -storeRawDocs
-```
-
 ### Document Retrieval
 The following models are implemented for an effective document retrieval system.
 * BM25
@@ -28,7 +22,13 @@ The following models are implemented for an effective document retrieval system.
 
 ## Running Systems 
 
-Downloading and unzipping checkpoints and index files into ``models`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
+Downloading and unzipping checkpoints, data and index files into ``models``, ``collection`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/), [Collection](https://cloud.tsinghua.edu.cn/d/a801f337a3b14892a138/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
+
+Build BM25 Index using [anserini](https://github.com/castorini/anserini).
+```
+./indexer/bm25_indexer/bin/IndexCollection -collection JsonCollection -es -es.index cord19 -input collection -generator LuceneDocumentGenerator -threads 1 -storePositions -storeDocvectors -storeRawDocs
+```
+
 ```
 pip install -r requirements.txt
 ```
