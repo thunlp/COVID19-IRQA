@@ -8,6 +8,12 @@ The CORD-19 resource is constructed by Semantic Scholar of Allen Institute and w
 
 ## IR and QA Pipeline
 
+### Build Index
+Elastic search local server is needed.
+```
+./appassembler/bin/IndexCollection -collection JsonCollection -es -es.index {index} -input {collection} -generator LuceneDocumentGenerator -threads 9 -storePositions -storeDocvectors -storeRawDocs
+```
+
 ### Document Retrieval
 The following models are implemented for an effective document retrieval system.
 * BM25
