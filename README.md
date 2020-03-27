@@ -22,7 +22,7 @@ The following models are implemented for an effective document retrieval system.
 
 ## Running Systems 
 
-Downloading and unzipping checkpoints and index files into ``models`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/). Then install required packages.
+Downloading and unzipping checkpoints and index files into ``models`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
 ```
 pip install -r requirements.txt
 ```
