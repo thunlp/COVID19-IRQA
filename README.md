@@ -22,9 +22,9 @@ The following models are implemented for an effective document retrieval system.
 
 ## Running Systems 
 
-Downloading and unzipping checkpoints, data and index files into ``models``, ``collection`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/), [Collection](https://cloud.tsinghua.edu.cn/d/a801f337a3b14892a138/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
+Downloading and unzipping checkpoints, data and index files into ``models`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
 
-Build BM25 Index using [anserini](https://github.com/castorini/anserini).
+Build BM25 Index using [anserini](https://github.com/castorini/anserini). Download link of collections are available in ``data``.
 ```
 ./indexer/bm25_indexer/bin/IndexCollection -collection JsonCollection -es -es.index cord19 -input collection -generator LuceneDocumentGenerator -threads 1 -storePositions -storeDocvectors -storeRawDocs
 ```
