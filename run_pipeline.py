@@ -169,7 +169,7 @@ class IRQASystem():
                 text = self.original_paragraphs[para_idx]["text"]
                 keyphrases = ""
                 if not doc_id in seen_doc_id:
-                    docs.append({"id": doc_id, "title": title, "text": paragraph, "keyphrases": keyphrases})
+                    docs.append({"id": doc_id, "title": title, "text": text, "keyphrases": keyphrases})
             logger.info("ANN retrieval time: %f" % (time.time() - ct))
             logger.info("ANN retrieved para num: %d" % (len(docs) - original_len))
 
