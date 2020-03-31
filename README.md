@@ -59,7 +59,7 @@ Using Distilled BERT in paragraph retrieval.
 python run_pipeline.py --ranking_model_path ./models/bert_ranking_model_distilled
 ```
 
-Keyphrase Extraction: the detailed giudes for generating keyphrases in the `kpe` folder.
+Keyphrase Extraction: the detailed giudes for generating keyphrases in the [kpe](https://github.com/thunlp/COVID19-IRQA/tree/master/kpe) folder.
 
 
 ## Running Results
