@@ -21,9 +21,8 @@ The following models are implemented for an effective document retrieval system.
 * BERT (Base version)
 
 ### Keyphrase Extraction
-
-  * BERT (Base version)
-  * RoBERTa (Base version)
+* [BERT2Gram](https://www.aclweb.org/anthology/D19-1521.pdf)
+* [BERT2Tag](https://github.com/thunlp/Bert2Tag)
 
 ## Running Systems
 
