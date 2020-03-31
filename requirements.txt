@@ -1,0 +1,9 @@
+pip
+torch
+faiss-gpu
+elasticsearch
+transformers>=2.1.0
+tensorflow>=2.1.0
+tensorflow-hub>=0.7.0
+tensorflow-text>=2.1.1
+tf-sentencepiece>=0.1.85
