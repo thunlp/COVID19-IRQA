@@ -20,7 +20,12 @@ The following models are implemented for an effective document retrieval system.
 ### QA System
 * BERT (Base version)
 
-## Running Systems 
+### Keyphrase Extraction
+
+  * BERT (Base version)
+  * RoBERTa (Base version)
+
+## Running Systems
 
 Downloading and unzipping checkpoints, data and index files into ``models`` and ``retrieval`` folders, respectively. You can find all resource on [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/d/7ad972bdc56f45d7a06a/) and [Google Drive](https://drive.google.com/drive/folders/1lEPz_zT7y41a__2EIor_ItBm9Pq76aKi?usp=sharing). Then install required packages.
 
@@ -54,14 +59,17 @@ Using Distilled BERT in paragraph retrieval.
 python run_pipeline.py --ranking_model_path ./models/bert_ranking_model_distilled
 ```
 
+Keyphrase Extraction: the detailed giudes for generating keyphrases in the `kpe` folder.
+
+
 ## Running Results
 Search result is a list of top-k document information and each document contains following fileds
-* "title": Document title 
+* "title": Document title
 * "keyphrases": Extracted keyphrases
 * "text": Document text
 
 QA results is a list of top-k answers and each answer contains following fileds
-* "text": Answer text 
+* "text": Answer text
 * "title": The document tile where the answer is from
 
 
